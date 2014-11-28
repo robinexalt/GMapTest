@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B03997A-A2D6-421D-9F46-AFF75583A892}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="iucon.web.Controls.PartialUpdatePanel, Version=1.0.4708.29377, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\iucon.web.Controls.PartialUpdatePanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GoogleMapWrapper.js" />
+    <Content Include="GService.asmx" />
+    <Content Include="images\defaultlogo.jpg" />
+    <Content Include="images\marker.gif" />
+    <Content Include="images\marker1.GIF" />
+    <Content Include="loading2.gif" />
+    <Content Include="PropertyReport2.aspx" />
+    <Content Include="tabAppServ.ascx" />
+    <Content Include="tabCompsReport.ascx" />
+    <Content Include="tabMap2.ascx" />
+    <Content Include="tabMasterSlip.ascx" />
+    <Content Include="tabMoreInfo.ascx" />
+    <Content Include="tabPhotoGallery.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BingMap.master.cs">
+      <DependentUpon>BingMap.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BingMap.master.designer.cs">
+      <DependentUpon>BingMap.master</DependentUpon>
+    </Compile>
+    <Compile Include="cGoogleMap.cs" />
+    <Compile Include="clsAppServ.cs" />
+    <Compile Include="clsPrint.cs" />
+    <Compile Include="clsRealQuest.cs" />
+    <Compile Include="clsRealQuistMasterSlip.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="GService.asmx.cs">
+      <DependentUpon>GService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyReport2.aspx.cs">
+      <DependentUpon>PropertyReport2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyReport2.aspx.designer.cs">
+      <DependentUpon>PropertyReport2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabAppServ.ascx.cs">
+      <DependentUpon>tabAppServ.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabAppServ.ascx.designer.cs">
+      <DependentUpon>tabAppServ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabCompsReport.ascx.cs">
+      <DependentUpon>tabCompsReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabCompsReport.ascx.designer.cs">
+      <DependentUpon>tabCompsReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabMap2.ascx.cs">
+      <DependentUpon>tabMap2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabMap2.ascx.designer.cs">
+      <DependentUpon>tabMap2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabMasterSlip.ascx.cs">
+      <DependentUpon>tabMasterSlip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabMasterSlip.ascx.designer.cs">
+      <DependentUpon>tabMasterSlip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabMoreInfo.ascx.cs">
+      <DependentUpon>tabMoreInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabMoreInfo.ascx.designer.cs">
+      <DependentUpon>tabMoreInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabPhotoGallery.ascx.cs">
+      <DependentUpon>tabPhotoGallery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabPhotoGallery.ascx.designer.cs">
+      <DependentUpon>tabPhotoGallery.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BingMap.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
